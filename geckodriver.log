@@ -1,0 +1,43 @@
+1637239579196	geckodriver	INFO	Listening on 127.0.0.1:57907
+1637239581214	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57908" "-no-remote" "-profile" "C:\\Users\\4D2B~1\\AppData\\Local\\Temp\\rust_mozprofile62jozn"
+[GFX1-]: Mismatched driver versions between the registry 8.830.6.3000 and DLL(s) 8.15.10.2372,  reported.
+[GFX1-]: Mismatched driver versions between the registry 8.830.6.3000 and DLL(s) 8.15.10.2372,  reported.
+[GFX1-]: Mismatched driver versions between the registry 8.830.6.3000 and DLL(s) 8.15.10.2372,  reported.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1637239592767	Marionette	INFO	Listening on port 57913
+1637239593297	Marionette	WARN	TLS certificate errors will be ignored for this session
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+[GFX1-]: Mismatched driver versions between the registry 8.830.6.3000 and DLL(s) 8.15.10.2372,  reported.
+[GFX1-]: Mismatched driver versions between the registry 8.830.6.3000 and DLL(s) 8.15.10.2372,  reported.
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1637239603376	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1637239615277	Marionette	INFO	Stopped listening on port 57913
+[Child 4664, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:545
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0005,name=PHttpChannel::Msg_Cancel) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B000A,name=PHttpChannel::Msg_DeletingChannel) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0005,name=PHttpChannel::Msg_Cancel) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B000A,name=PHttpChannel::Msg_DeletingChannel) Channel error: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
