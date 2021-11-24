@@ -1,12 +1,16 @@
-from seleniumbase import BaseCase
+#from seleniumbase import BaseCase
+from page_objects.main_page import MainPage
+from page_objects.login_page import LoginPage
 
 #https://www.youtube.com/c/AutomationBro/videos
 
-class AuthPage(BaseCase):
-    def test_login_good(self):
-        self.open("https://stage.omnio.site")
-        self.assert_title("Omnio - пульсовая диагностика организма со смартфона")
-        self.click("button.btn.btn_default")
+class AuthPage(MainPage,LoginPage):
+    def test_login_good1(self):
+        self.page_open()
+        self.assert_title_text_main()
+        self.assert_heading_main()
+        self.click_sign_in_main()
+        self.assert_heading_login()
         self.send_keys('input#login', 'mal@inveramed.ru')
         self.send_keys('input#password', '12345678')
         self.click(".ReSignInForm__buttons-item")
