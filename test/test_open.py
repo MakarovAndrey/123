@@ -2,8 +2,8 @@ from seleniumbase import BaseCase
 
 #https://www.youtube.com/c/AutomationBro/videos
 
-class MainPage(BaseCase):
-    def test_open(self):
+class AuthPage(BaseCase):
+    def test_login_good(self):
         self.open("https://stage.omnio.site")
         self.assert_title("Omnio - пульсовая диагностика организма со смартфона")
         self.click("button.btn.btn_default")
@@ -16,7 +16,7 @@ class MainPage(BaseCase):
         self.assert_equal("Пульсовая волна", pulse_wave.text)
         self.click(".ReAsideMainWrapper__user")
         profile = self.find_element(".ReProfile__self-title")
-        self.assert_equal("Профильь", profile.text)
+        self.assert_equal("Профиль", profile.text)
 
         #find element by css-selector
         # span[class*=ReMeasurementDiagram__icon-tooltip-text]
