@@ -14,10 +14,23 @@ class AuthPage(BaseCase):
         pulse_wave = self.find_element("//*[starts-with(@class, 'RePulseWaveFilter__filter-title')]", timeout=20)
 #       print(element.text)
         self.assert_equal("Пульсовая волна", pulse_wave.text)
-        self.click(".ReAsideMainWrapper__user")
-        profile = self.find_element(".ReProfile__self-title")
-        self.assert_equal("Профиль", profile.text)
+#        self.click(".ReAsideMainWrapper__user")
+#        profile = self.find_element(".ReProfile__self-title")
+#        self.assert_equal("Профиль", profile.text)
 
+    def test_login_not_found(self):
+        self.open("https://stage.omnio.site")
+        self.assert_title("Omnio - пульсовая диагностика организма со смартфона")
+        self.click("button.btn.btn_default")
+        self.send_keys('input#login', '12345@inveramed.ru')
+        self.send_keys('input#password', '12345678')
+        self.click(".ReSignInForm__buttons-item")
+        error_1 = self.find_element("div[class*=input--wrapper_description]", timeout=2)
+        self.assert_equal("Неверный логин или парол", error_1.text)
+
+
+
+        #class *=input--wrapper_description
         #find element by css-selector
         # span[class*=ReMeasurementDiagram__icon-tooltip-text]
 
