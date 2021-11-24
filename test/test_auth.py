@@ -26,7 +26,7 @@ class AuthPage(BaseCase):
         self.send_keys('input#password', '12345678')
         self.click(".ReSignInForm__buttons-item")
         error_1 = self.find_element("div[class*=input--wrapper_description]", timeout=2)
-        self.assert_equal("Неверный логин или парол", error_1.text)
+        self.assert_equal("Неверный логин или пароль", error_1.text)
 
 
 
