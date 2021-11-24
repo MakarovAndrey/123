@@ -16,4 +16,4 @@ class MainPage(BaseCase):
         self.assert_title("Omnio - пульсовая диагностика организма со смартфона")
 
     def click_sign_in_main(self):
-        self.click(MainPagesign_in)
+        self.click(MainPage.sign_in)
