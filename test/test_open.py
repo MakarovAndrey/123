@@ -16,7 +16,7 @@ class MainPage(BaseCase):
         self.assert_equal("Пульсовая волна", pulse_wave.text)
         self.click(".ReAsideMainWrapper__user")
         profile = self.find_element(".ReProfile__self-title")
-        self.assert_equal("Профиль", profile.text)
+        self.assert_equal("Профильь", profile.text)
 
         #find element by css-selector
         # span[class*=ReMeasurementDiagram__icon-tooltip-text]
