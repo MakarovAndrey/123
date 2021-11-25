@@ -3,7 +3,10 @@ from seleniumbase import BaseCase
 class MainPage(BaseCase):
     title = "span[class*=ReGreeting__title]"
     sign_in = "button[class*=btn_default]"
+    sign_up = "button[class*=btn btn_primary]"
     heading = "span[class*=ReGreeting__title]"
+    title_select_language = "span[class*=ReGreeting__language-title]"
+    select_language = "div[class*=flag-select]"
 
     def page_open(self):
         self.open("https://stage.omnio.site")
