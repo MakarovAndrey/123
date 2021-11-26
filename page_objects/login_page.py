@@ -11,6 +11,7 @@ class LoginPage(BaseCase):
     password = "input#password"
     login_button = "button[class*=btn_primary]"
     exit = "span[class*=ReAsideMainWrapper__exit-button-text]"
+    error_text_login = "div[class*=input--wrapper_description]"
 
     def auth_success(self):
         self.open("https://stage.omnio.site")
@@ -30,8 +31,8 @@ class LoginPage(BaseCase):
         self.click(MainPage.sign_in)
         self.send_keys(self.login, '12345@inveramed.ru')
         self.send_keys(self.password, '12345678')
-        self.click(".ReSignInForm__buttons-item")
-        error = self.find_element("div[class*=input--wrapper_description]", timeout=2)
+        self.click(self.login_button)
+        error = self.find_element(self.error_text_login, timeout=5)
         self.assert_equal("Неверный логин или пароль", error.text)
 
 
