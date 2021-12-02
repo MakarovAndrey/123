@@ -5,7 +5,7 @@ from page_objects.home_page import HomePage
 
 
 #https://www.youtube.com/c/AutomationBro/videos
-#example
+#exampl
 
 
 class AuthPage(MainPage, LoginPage, HomePage):
