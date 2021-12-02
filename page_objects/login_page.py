@@ -22,7 +22,7 @@ class LoginPage(BaseCase):
         self.click(self.login_button)
         time.sleep(5)
         text = self.find_element(self.exit)
-        self.assert_equal("Выход", text.text)
+        self.assert_equal("Выхд", text.text)
         self.click(self.exit)
 
     def login_not_found(self):
